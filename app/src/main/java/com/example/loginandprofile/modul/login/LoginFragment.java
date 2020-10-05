@@ -9,9 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.Nullable;
-import com.example.loginandprofile.ProfileActivity;
+import com.example.loginandprofile.Profile;
 import com.example.loginandprofile.R;
 import com.example.loginandprofile.base.BaseFragment;
+import com.example.loginandprofile.modul.profile.ProfileActivity;
 
 public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Presenter> implements LoginContract.View {
     EditText etUsername;

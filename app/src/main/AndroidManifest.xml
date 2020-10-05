@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Custom">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".Profile"></activity>
+        <activity android:name=".modul.profile.ProfileActivity"></activity>
         <activity android:name=".modul.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
