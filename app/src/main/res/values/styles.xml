@@ -42,4 +42,16 @@
         <item name="detailBackground">@color/myLayoutColor</item>
         <item name="imageTransparentOverlay">@color/pantoneTransparent</item>
     </style>
+
+    <style name="Custom" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/customPrimary</item>
+        <item name="colorPrimaryDark">@color/customPrimaryDark</item>
+        <item name="tabBackgroundColor">@color/customText</item>
+        <item name="toolbarBackgroundColor">@color/pantone331c</item>
+        <item name="textDarkColor">@color/pantoneDark331c</item>
+        <item name="textTabColor">@color/pantoneDark331c</item>
+        <item name="textWhiteColor">@color/myTextLight</item>
+        <item name="detailBackground">@color/myLayoutColor</item>
+        <item name="imageTransparentOverlay">@color/pantoneTransparent</item>
+    </style>
 </resources>

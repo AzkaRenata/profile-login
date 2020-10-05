@@ -25,7 +25,6 @@ public abstract class BaseFragmentHolderActivity extends BaseActivity {
         tvToolbarTitle = (TextView) findViewById(R.id.tvToolbarTitle);
         flFragmentContainer = (FrameLayout) findViewById(R.id.flFragmentContainer);
         btOptionMenu = (ImageButton) findViewById(R.id.btOptionMenu);
-        ivIcon = (ImageView) findViewById(R.id.ivIcon);
         btBack = (ImageButton) findViewById(R.id.btBack);
         vMenuBarShadow = findViewById(R.id.vMenuBarShadow);
         rlActivityFragmentHolder = (RelativeLayout) findViewById(R.id.rlActivityFragmentHolder);

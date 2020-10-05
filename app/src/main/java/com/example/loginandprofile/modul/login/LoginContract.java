@@ -5,7 +5,7 @@ import com.example.loginandprofile.base.BaseView;
 
 public interface LoginContract {
     interface View extends BaseView<Presenter> {
-        void redirectToProfile(String email, String Password);
+        void redirectToProfile(String username, String Password);
     }
 
     interface Presenter extends BasePresenter {

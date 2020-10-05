@@ -14,7 +14,7 @@ import com.example.loginandprofile.R;
 import com.example.loginandprofile.base.BaseFragment;
 
 public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Presenter> implements LoginContract.View {
-    EditText etEmail;
+    EditText etUsername;
     EditText etPassword;
     Button btnLogin;
 
@@ -29,7 +29,7 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
         mPresenter = new LoginPresenter(this);
         mPresenter.start();
 
-        etEmail = fragmentView.findViewById(R.id.et_email);
+        etUsername = fragmentView.findViewById(R.id.et_username);
         etPassword = fragmentView.findViewById(R.id.et_password);
         btnLogin = fragmentView.findViewById(R.id.bt_login);
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +45,7 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
     }
 
     public void setBtLoginClick(){
-        String email = etEmail.getText().toString();
+        String email = etUsername.getText().toString();
         String password = etPassword.getText().toString();
         mPresenter.performLogin(email,password);
     }
@@ -56,9 +56,9 @@ public class LoginFragment extends BaseFragment<LoginActivity, LoginContract.Pre
     }
 
     @Override
-    public void redirectToProfile(String email, String Password) {
+    public void redirectToProfile(String username, String Password) {
         Intent intent = new Intent(activity, ProfileActivity.class);
-        intent.putExtra("username", email);
+        intent.putExtra("username", username);
         startActivity(intent);
         activity.finish();
     }
